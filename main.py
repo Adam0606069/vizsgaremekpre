@@ -31,6 +31,18 @@ if van:
 else:
     print("Nincs 4-es.")
 #4. Keressük meg, hogy volt-e 5-ös
+van5=False
+
+for i in range(len(adatok)):
+    if adatok[i]==5:
+        van5=True
+        break
+if van5:
+    print(f"Van 5-ös a(z) {i}. indexen.")
+else:
+    print("Nincs")
+
+
 #5. Hány darab 9-es volt
 #6. Mennyi a legnagyobb beírt szám?
 #7. Hanyadik indexen van a legkisebb elem?
