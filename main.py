@@ -59,18 +59,16 @@ for szam in adatok:
 print(legnagyobbszam)
     
 #7. Hanyadik indexen van a legkisebb elem?
-minindex=[]
-legkisebbindex=adatok[0]
-for szam in adatok:
-    if szam<legkisebbindex:
-        minindex.append()
+minindex=0
+for i in range(len(adatok)):
+    if adatok[i]<adatok[minindex]:
+        minindex=i
 
-
-print(minindex)
+print(f"{adatok[minindex]}, {minindex}")
 
 #8. Páros számok kiírása.
 parosszamok=[]
 for szam in adatok:
     if szam%2==0:
         parosszamok.append(szam)
-print(parosszamok)
+print(f"{parosszamok}")
