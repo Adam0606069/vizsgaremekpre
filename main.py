@@ -20,6 +20,16 @@ atlag=osszeg/szam_db
 print(f"A beolvasott adatok átlaga {atlag}")
 
 #3. Döntsük el, hogy volt-e 4-es
+van=False
+for szam in adatok:
+    if 4 in adatok:
+        van=True
+        break
+
+if van:
+    print("Van 4-es.")
+else:
+    print("Nincs 4-es.")
 #4. Keressük meg, hogy volt-e 5-ös
 #5. Hány darab 9-es volt
 #6. Mennyi a legnagyobb beírt szám?
