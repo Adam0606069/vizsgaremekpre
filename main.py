@@ -44,6 +44,33 @@ else:
 
 
 #5. Hány darab 9-es volt
+
+kilenc_db=0
+for szam in adatok:
+    if szam==9:
+        kilenc_db+=1
+
+print(f"{kilenc_db}db 9-es van a beolvasott számok között.")
 #6. Mennyi a legnagyobb beírt szám?
+legnagyobbszam=adatok[0]
+for szam in adatok:
+    if szam>legnagyobbszam:
+        legnagyobbszam=szam
+print(legnagyobbszam)
+    
 #7. Hanyadik indexen van a legkisebb elem?
+minindex=[]
+legkisebbindex=adatok[0]
+for szam in adatok:
+    if szam<legkisebbindex:
+        minindex.append()
+
+
+print(minindex)
+
 #8. Páros számok kiírása.
+parosszamok=[]
+for szam in adatok:
+    if szam%2==0:
+        parosszamok.append(szam)
+print(parosszamok)
